@@ -1,0 +1,56 @@
+# Nmap 7.91 scan initiated Mon Jun 14 18:05:46 2021 as: nmap -sC -sV -p53,80,443,4433,5449,8181,8182,45555,49152,63481 -oN targeted 192.168.100.1
+Nmap scan report for dlinkrouter (192.168.100.1)
+Host is up (0.0034s latency).
+
+PORT      STATE SERVICE    VERSION
+53/tcp    open  domain     dnsmasq 2.45
+| dns-nsid: 
+|_  bind.version: dnsmasq-2.45
+80/tcp    open  http       D-Link DIR-868L WAP http config 1.10
+|_http-server-header: Linux, HTTP/1.1, DIR-868L Ver 1.10
+|_http-title: D-LINK SYSTEMS, INC. | WIRELESS ROUTER | HOME
+443/tcp   open  ssl/https?
+| ssl-cert: Subject: commonName=General Router/organizationName=None/stateOrProvinceName=Taiwan/countryName=TW
+| Not valid before: 2012-02-22T06:04:36
+|_Not valid after:  2032-02-17T06:04:36
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|     SSL2_DES_64_CBC_WITH_MD5
+|     SSL2_IDEA_128_CBC_WITH_MD5
+|     SSL2_RC2_128_CBC_WITH_MD5
+|_    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+4433/tcp  open  ssl/vop?
+| ssl-cert: Subject: commonName=General Router/organizationName=None/stateOrProvinceName=Taiwan/countryName=TW
+| Not valid before: 2012-02-22T06:04:36
+|_Not valid after:  2032-02-17T06:04:36
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|     SSL2_DES_64_CBC_WITH_MD5
+|     SSL2_IDEA_128_CBC_WITH_MD5
+|     SSL2_RC2_128_CBC_WITH_MD5
+|_    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+5449/tcp  open  unknown
+8181/tcp  open  http       D-Link SharePort web access 1.0 (model DIR-868L, version 1.10)
+|_http-server-header: Linux, WEBACCESS/1.0, DIR-868L Ver 1.10
+|_http-title: D-LINK SYSTEMS, INC. | Web File Access : Login
+8182/tcp  open  http       D-Link DIR-868L WAP http config 1.10
+|_http-server-header: Linux, HTTP/1.1, DIR-868L Ver 1.10
+|_http-title: 404 Not Found
+45555/tcp open  http       Huawei HG8245T modem http config
+|_http-title: Site doesn't have a title.
+49152/tcp open  upnp       D-Link DIR-868L WAP UPnP 1.10 (UPnP 1.0)
+63481/tcp open  domain     dnsmasq 2.45
+| dns-nsid: 
+|_  bind.version: dnsmasq-2.45
+Service Info: OS: Linux; Devices: storage-misc, broadband router, WAP; CPE: cpe:/h:dlink:dir-868l:1.10, cpe:/o:linux:linux_kernel, cpe:/h:d-link:dir-868l, cpe:/h:huawei:hg8245t
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jun 14 18:08:33 2021 -- 1 IP address (1 host up) scanned in 167.37 seconds

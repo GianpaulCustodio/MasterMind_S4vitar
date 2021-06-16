@@ -1,0 +1,5 @@
+# Nmap 7.91 scan initiated Thu Jun 10 19:30:45 2021 as: nmap -sS --min-rate 5000 --open -vvv -n -Pn -p- -oG allPorts 192.168.100.1
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.100.1 ()	Status: Up
+Host: 192.168.100.1 ()	Ports: 53/open/tcp//domain///, 80/open/tcp//http///, 443/open/tcp//https///, 4433/open/tcp//vop///, 5449/open/tcp/////, 8181/open/tcp//intermapper///, 8182/open/tcp//vmware-fdm///, 45555/open/tcp/////, 49152/open/tcp//unknown///, 63481/open/tcp/////	Ignored State: closed (65525)
+# Nmap done at Thu Jun 10 19:30:54 2021 -- 1 IP address (1 host up) scanned in 9.02 seconds
