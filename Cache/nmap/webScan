@@ -1,0 +1,15 @@
+# Nmap 7.91 scan initiated Mon Jun 14 18:21:31 2021 as: nmap -p80 --script http-enum -oN webScan 192.168.100.1
+Nmap scan report for dlinkrouter (192.168.100.1)
+Host is up (0.0065s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-enum: 
+|   /tools_admin.php: D-Link DIR-300
+|   /bsc_lan.php: D-Link DIR-300, DIR-320, DIR-615 revD
+|   /info.php: Possible information file
+|   /HNAP1/: wireless broadband router
+|_  /webaccess/: Potentially interesting folder
+MAC Address: 6C:19:8F:CB:9B:10 (D-Link International)
+
+# Nmap done at Mon Jun 14 18:23:00 2021 -- 1 IP address (1 host up) scanned in 89.65 seconds
